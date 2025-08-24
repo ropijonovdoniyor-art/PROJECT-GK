@@ -1,0 +1,296 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
+.head-logo {
+  font-family: "Great Vibes", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(255, 244, 180);
+  padding: 20px;
+  text-align: center;
+  display: block;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-family: "Merienda", cursive;
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.521);
+}
+
+.sp-1 {
+  font-size: 8rem;
+  position: absolute;
+  left: 22%;
+  top: 50%;
+
+  animation: sp-1A 30s linear infinite;
+}
+
+.sp-2 {
+  font-size: 8rem;
+  position: absolute;
+  right: 22%;
+  top: 50%;
+
+  animation: sp-2A 30s linear infinite;
+}
+
+
+img {
+  width: 35%;
+  display: block;
+  margin: auto;
+  margin-top: -70px;
+  animation: heartA 4s linear infinite;
+}
+
+body {
+  background-color: black;
+  background-image: url('https://media.istockphoto.com/id/1203074475/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BA%D0%BE%D1%81%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%84%D0%BE%D0%BD-%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D1%81-%D1%82%D0%B5%D0%BC%D0%BD%D0%B0%D1%8F-%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F-%D0%B2%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D1%81-%D1%81%D0%B8%D1%8F%D1%8E%D1%89%D0%B8%D0%BC%D0%B8-%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0%D0%BC%D0%B8-%D0%B8.jpg?s=612x612&w=0&k=20&c=6CTmwnhJEnf3B-AKEQ9C38DibjlX9iicO0BjgqkFcZw=');
+}
+
+.description {
+  font-family: "Merienda", cursive;
+  font-size: 1rem;
+  color: rgb(255, 244, 180);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+.cta-btn {
+  font-family: "Merienda", cursive;
+  font-size: 1.2rem;
+  color: rgb(255, 244, 180);
+  background-color: transparent;
+  border: 1px solid rgb(255, 244, 180);
+  border-radius: 50px;
+  height: 52px;
+  width: 300px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cta-btn:hover {
+  box-shadow: 0 0 50px rgb(255, 244, 180);
+  text-shadow: 0 0 20px rgb(255, 244, 180);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.foot-items {
+  font-family: "Merienda", cursive;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0 50px;
+}
+.foot-items:hover {
+  text-shadow: 0 0 50px rgb(255, 244, 180);
+  color: rgb(255, 244, 180);
+}
+
+/* Animation */
+
+@keyframes heartA {
+  0% {
+    transform: scale(0.9);
+    filter: drop-shadow(0 0 25px rgba(255, 244, 180, 0.938));
+  }
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 100px rgba(255, 244, 180, 0.932));
+  }
+  100% {
+    transform: scale(0.9);
+    filter: drop-shadow(0 0 25px rgba(255, 244, 180, 0.959));
+  }
+}
+
+@keyframes sp-1A {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes sp-2A {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes reloadA {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.head-logo,
+h1,
+.cta-btn,
+.description,
+footer {
+  animation: reloadA 2.5s ease-in-out forwards;
+}
+
+/* Responsive */
+
+@media (max-width: 428px) {
+  .head-logo {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin: 200px auto 150px;
+  }
+  
+  .sp-1 {
+    font-size: 4rem;
+    left: 10%;
+    top: 55%;
+  
+    animation: none;
+  }
+  
+  .sp-2 {
+    font-size: 4rem;
+    right: 10%;
+    top: 55%;
+  
+    animation: none;
+  }
+  img {
+    width: 50%;
+    margin-top: 10px;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+  }
+  .description {
+    font-size: 0.9rem;
+    margin-top: -50px;
+  }
+  
+  .cta-btn {
+    font-size: 1rem;
+    height: 50px;
+    width: 300px;
+  }
+  
+  .foot-items {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+}
+  @media (min-width: 429px) and (max-width: 1279px){
+    img {
+      width: 50%;
+      margin-top: 10px;
+      position: absolute;
+      top: 10%;
+      left: 25%;
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 400px auto 220px;
+    }
+    
+    .sp-1 {
+      font-size: 5rem;
+      left: 25%;
+      top: 60%;
+    
+      animation: none;
+    }
+    
+    .sp-2 {
+      font-size: 5rem;
+      right: 25%;
+      top: 60%;
+    
+      animation: none;
+    }
+    
+    .description {
+      font-size: 0.9rem;
+      margin-top: -50px;
+    }
+    
+    .cta-btn {
+      font-size: 1rem;
+      height: 50px;
+      width: 300px;
+    }
+    
+    .foot-items {
+      font-size: 1rem;
+      padding: 0 20px;
+    }
+
+  }
+
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  img {
+    width: 30%;
+  }
+
+  .sp-1 {
+    left: 15%;
+  
+  }
+  
+  .sp-2 {
+    right: 15%;
+  }
+  .description {
+    margin: 40px auto 50px;
+  }
+}
