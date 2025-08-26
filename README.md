@@ -1,3 +1,3 @@
 # PROJECT-GK
-Был добавлен главное меню, и кнопка которая переводит в слайдер
+Full and ready project of MAXTINDER!!!
 
