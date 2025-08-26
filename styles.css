@@ -1,6 +1,11 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap');
 
+.e {
+  text-decoration: none;
+  color: rgb(255, 244, 180);
+}
+
 * {
   padding: 0;
   margin: 0;
