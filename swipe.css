@@ -1,6 +1,34 @@
-{
-box-sizing: border-box;
-}
 body {
-background-image: url('https://media.istockphoto.com/id/1203074475/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BA%D0%BE%D1%81%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%84%D0%BE%D0%BD-%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D1%81-%D1%82%D0%B5%D0%BC%D0%BD%D0%B0%D1%8F-%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F-%D0%B2%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D1%81-%D1%81%D0%B8%D1%8F%D1%8E%D1%89%D0%B8%D0%BC%D0%B8-%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0%D0%BC%D0%B8-%D0%B8.jpg?s=612x612&w=0&k=20&c=6CTmwnhJEnf3B-AKEQ9C38DibjlX9iicO0BjgqkFcZw=');
+  background-image: url('https://media.istockphoto.com/id/1203074475/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BA%D0%BE%D1%81%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%84%D0%BE%D0%BD-%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%BD%D1%8B%D0%B9-%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D1%81-%D1%82%D0%B5%D0%BC%D0%BD%D0%B0%D1%8F-%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F-%D0%B2%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D1%81-%D1%81%D0%B8%D1%8F%D1%8E%D1%89%D0%B8%D0%BC%D0%B8-%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0%D0%BC%D0%B8-%D0%B8.jpg?s=612x612&w=0&k=20&c=6CTmwnhJEnf3B-AKEQ9C38DibjlX9iicO0BjgqkFcZw=');
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.card-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+.card {
+  box-shadow: 0 0 25px rgb(255, 244, 180);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: rgba(0, 0, 0, 0.3);
+  user-select: none;
+  font-size: 130px;
+  transition: transform 0.3s, opacity 0.3s ease;
+}
+.card:not(:last-child) {
+  top: 5px;
 }
